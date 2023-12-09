@@ -1,0 +1,23 @@
+@mixin flex($j, $a) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+  }
+  
+  @mixin size($w, $h) {
+    width: $w;
+    height: $h;
+  }
+  
+  @mixin position($p,$r,$t) {
+    position: $p;
+    right: $r;
+    top: $t;
+  }
+  
+  $full: 100%;
+  nav{
+    @include position(fixed,45%,95%);
+    background-color: rgb(220, 255, 149);
+    border-radius: 10px;
+  }
